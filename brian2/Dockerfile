@@ -3,7 +3,7 @@ FROM jupyter/datascience-notebook
 USER root
 RUN apt-get update
 RUN apt-get install -yq dvipng
-RUN apt-get install -yq texlive-full
+RUN apt-get install -yq texlive-base 
 
 USER jovyan
 
